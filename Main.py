@@ -4,7 +4,7 @@ def insertionSort(array) -> List[int]:
     for n in range(1,len(array)):
         key = array[n]
         num = n - 1
-        while num > 0 and key < array[num]:
+        while num >= 0 and key < array[num]:
             array[num + 1] = array[num]
             num -= 1
         array[num + 1] = key
